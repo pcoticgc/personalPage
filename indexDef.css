@@ -145,19 +145,19 @@ header{
     border: 1px solid #cccc33;
     border-radius: 7pt;
     margin: 10px;	
- }
- .trabajo a{
+}
+.trabajo a{
    text-decoration: none;
- }
- .trabajo a:hover{
+}
+.trabajo a:hover{
     text-decoration: underline;
-  }
+}
  
- .trabajo:hover {
+.trabajo:hover {
      opacity: 1;
      cursor: pointer;
 
- }
+}
 
 .main nav {
    margin: 0px;
@@ -196,24 +196,24 @@ footer {
    /*border: 1px solid #eebb55;
    border-radius: 7pt;
    background: #312707;*/
-   }
-   footer a{
+}
+footer a{
     text-decoration: none;
     padding: 10px;
+}
+footer a:hover{
+    text-decoration: underline;
     }
-    footer a:hover{
-        text-decoration: underline;
-        }
  
   /* Too narrow to support three columns */
   @media all and (max-width: 1000px) {
   
 .main, #page {
    flex-flow: column;
-   }
+}
 
 .main > article, .main > nav, .main > aside {
     /* Return them to document order */
    order: 0;
-   }
-  }
+}
+}
