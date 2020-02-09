@@ -36,6 +36,7 @@ header{
 }
 .header-user-ul{
     position: absolute;
+    z-index:1;
 	display: none;
 	list-style: none;
     margin: 0px 0px 0px 20px;
@@ -93,6 +94,7 @@ header{
 }
 .header-language-ul{
     position: absolute;
+    z-index:1;
 	display: none;
 	list-style: none;
     margin: 0px 0px 0px 20px;
@@ -204,7 +206,7 @@ footer {
         }
  
   /* Too narrow to support three columns */
-  @media all and (max-width: 840px) {
+  @media all and (max-width: 1000px) {
   
 .main, #page {
    flex-flow: column;
