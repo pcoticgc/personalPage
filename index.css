@@ -204,7 +204,7 @@ footer {
         }
  
   /* Too narrow to support three columns */
-  @media all and (max-width: 640px) {
+  @media all and (max-width: 840px) {
   
 .main, #page {
    flex-flow: column;
