@@ -1,8 +1,10 @@
-html{
-    
-    margin: 0px;
+body, html {
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
 }
-
+/*header/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 header{
     display: flex;
     justify-content: start;
@@ -11,18 +13,15 @@ header{
     height: 100px;
     background-color: rgb(252, 185, 0);
 }
-
 .header_logo{
     height: 80px;
     width: 80px;
-    padding: 10px;
-   
+    padding: 10px;  
 }
 
 .header_language:hover{
     cursor: pointer;
 }
-
 .header_language-ico{
     height: 60px;
     width: 60px;
@@ -32,11 +31,12 @@ header{
 }
 
 .header_language-ico-ul{
-    padding: 0px;
-    border: 0px ;
-    margin: 0px;
+    display: none; 
     list-style: none;
-    display: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    position: absolute;
+    width: 100px;
 }
 
 .header_language-ico-li{  
@@ -45,6 +45,10 @@ header{
 }
 .header_language:hover ul, ul:hover {  
     display: block;  
+}
+.header_language-ico-li:hover{  
+    height: 65px;
+    width: 65px;
 }
 .header_search{
     height: 40px; 
@@ -69,7 +73,8 @@ header{
 .header_user-options-p{
     margin-left: 10px;
     margin-top: 0px;
-    margin-bottom: 5px;
+	margin-bottom: 5px;
+	color: white;
 }
 .header_user-options-ul{
     display: none; 
@@ -91,60 +96,65 @@ header{
 }
 .header_user-options-ul a{
     text-decoration: none;
+    color: white;
 }
 
 .header_user-options-li:hover a{
     text-decoration: underline;
 }
 
-.header_language-ico-li:hover{  
-    height: 65px;
-    width: 65px;
-}
 
-body{
-    margin: 0px;
-    background-color: rgb(252, 185, 0);
-    
+/*main/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+#main {
+   height: 100%;
+   display: -webkit-flex;
+   display: flex;
+   
 }
-.modeloCaja {
-    padding: 0px;
+article {
+	background-color: rgb(252, 185, 0);
+	flex: 3 1 60%;
+	order: 2;
+	padding: 0px;
     border: 0px ;
     margin: 0px;
     display: flex;
     flex-wrap: wrap;
-    align-items: stretch;
-    width: 100%;
-    height: 400px;
- }
-.modeloCaja_01 {
+    width: 100%;	
+}
+
+.trabajo {
    background-color: rgb(2, 2, 235);
-   width: 200px;
-   height: 200px;
+   width: 100px;
+   height: 100px;
    padding: 10px;
-   border: 10px solid  rgb(185, 235, 2);
+   border: 10px solid white;
    margin: 10px;
+   flex-wrap: wrap;
+    width: 100%;	
 }
 
-.modeloCaja_01:hover {
+.trabajo:hover {
     background: #53a7ea;
-    width: 210px;
-    height: 210px;
+    cursor: pointer;
 }
-footer{
-    display: block;
-	min-height: 10%;
-	background: #FC6;
-
+nav {
+	background-color: rgb(252, 185, 0);
+	flex: 1 6 20%;
+	order: 1;
 }
-.footer a{
-    text-decoration: none;
-    align-items: center;
-  display: flex;
-  height: 50px;
-  width: 50%; 
+/*aside/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+aside {
+	background-color: rgb(252, 185, 0);
+	flex: 1 6 20%;
+	order: 3;
+	color: white;
 }
-
-.footer a:hover{
-    text-decoration: underline; 
+aside a{
+    color: white; 
+    text-decoration: none; 
 }
+aside a:hover{
+    text-decoration: underline;
+}
+/*footer/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/

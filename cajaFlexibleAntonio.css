@@ -1,23 +1,19 @@
-html {
-    height:100%;
-    width:100%;
-}
 body {
     font: 24px Helvetica;
-    background-image: url(./images/fondo.jpg);
+    background: #999999;
     margin: 0px;
     padding: 0px;
-    background-size:100% 100%;
 }
   
 header{
+    
     display: block;
     margin: 0px;
     padding: 0px;
     height: 100px;
-    /*border: 1px solid #eebb55;
+    border: 1px solid #eebb55;
     border-radius: 7pt;
-    background: #ffeebb;*/
+    background: #ffeebb;
     display: flex;
 	flex-direction: row;
 }
@@ -126,9 +122,9 @@ header{
 .main article {
    margin: 0px;
    padding: 0px;
-   /*border: 1px solid #cccc33;
+   border: 1px solid #cccc33;
    border-radius: 7pt;
-   background: #dddd88;*/
+   background: #dddd88;
    flex: 3 1 60%;
    order: 2;
    display: flex;
@@ -137,11 +133,9 @@ header{
 
 .trabajo {
     background-color: rgb(2, 2, 235);
-    opacity: 0.5;
     height: 100px;
     padding: 10px;
-    border: 1px solid #cccc33;
-    border-radius: 7pt;
+    border: 10px solid white;
     margin: 10px;	
  }
  .trabajo a{
@@ -152,36 +146,31 @@ header{
   }
  
  .trabajo:hover {
-     opacity: 1;
+     background: #53a7ea;
      cursor: pointer;
-
  }
 
 .main nav {
    margin: 0px;
    padding: 0px;
-    /*border: 1px solid #8888bb;
+   border: 1px solid #8888bb;
    border-radius: 7pt;
-  background: #ccccff;*/
+   background: #ccccff;
    flex: 1 6 20%;
    order: 1;
    }
 .main aside {
    margin: 0px;
    padding: 0px;
-   /*border: 1px solid #8888bb;
+   border: 1px solid #8888bb;
    border-radius: 7pt;
-   background: #ccccff;*/
+   background: #ccccff;
    flex: 1 6 20%;
    order: 3;
    }
 .main aside p, ul, a{
     color: white;
-    font: 24px Helvetica;
-    text-decoration: none;
-}
-.main aside a:hover{
-    text-decoration: underline;
+	font: 24px Helvetica;
 }
 
 
@@ -191,9 +180,10 @@ footer {
    display: block;
    margin: 0px;
    padding: 0px;
-   /*border: 1px solid #eebb55;
+   min-height: 100px;
+   border: 1px solid #eebb55;
    border-radius: 7pt;
-   background: #312707;*/
+   background: #312707;
    }
    footer a{
     text-decoration: none;
