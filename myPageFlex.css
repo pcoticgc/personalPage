@@ -206,7 +206,7 @@ footer a:hover{
     }
  
   /* Too narrow to support three columns */
-  @media all and (max-width: 500px) {
+  @media all and (max-width: 1300px) {
   
 .main, #page {
    flex-flow: column;
