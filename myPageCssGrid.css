@@ -155,6 +155,10 @@ footer {
     display: grid;
     grid-template-columns: 64px 64px 64px 64px 64px;
     grid-template-rows: 64px 64px 64px 64px 64px 64px 64px 64px;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    padding-left: 2px;
+    padding-top: 2px;
 }
   /* Too narrow to support three columns
   @media all and (max-width: 320px) {
