@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: teal;
+    padding: 5px;
+}
+.container {
+    display: grid;
+    grid-template: 70px 70px 70px 70px 70px 70px 70px / 70px 70px 70px 70px 70px;
+    grid-gap: 10px;
+    height: 100vh;
+    grid-template-areas: 
+    " user      search    search    search    language"
+    " user-menu article01 article01 article01 language-menu"
+    " user-menu article02 article02 article02 language-menu"
+    " .         article03 article03 article03 ."
+    " .         article04 article04 article04 ."
+    " .         article05 article05 article05 ."
+    " .         footer    footer    footer .";
+    grid-gap: 5px;
+}
+    
+.header-user-img {
+    grid-area: user;
+    width: 60px;
+    padding-top: 10px;
+}
+.header-user-img:hover{
+    cursor: pointer;
+}  
+.header-user:hover ul, ul:hover {  
+    display: block;  
+}
+.header-user-ul {
+    grid-area: user-menu;
+    list-style: none;
+    display: none;
+    text-align: left;  
+    margin: 0px;
+    padding: 0px;
+    padding-left: 10px;
+}
+.header-user-li a {
+    text-decoration: none;
+}
+.header-user-li:hover a{
+    text-decoration: underline;
+}
+.header-user-li a {
+    text-decoration: none;
+}/* user search */
+.header-search-input {
+    grid-area: search;
+    height: 40px;
+    margin-top: 15px;
+    border: solid cadetblue;
+    border-radius: 25px;
+    
+} 
+
+.header-language-img {
+    grid-area: language;
+    width: 60px;
+    padding-top: 10px;
+}
+.header-language-img:hover{
+    cursor: pointer;
+}  
+.header-language:hover ul, ul:hover {  
+    display: block;  
+}   
+.header-language-ul {
+    grid-area: language-menu;
+    width: 60px;
+    display: none;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.header-language-li {
+    width: 60px;
+}
+.header-language-li:hover img{
+    width: 58px;
+    height: 58px;
+    cursor: pointer;
+}
+.article01 {
+    grid-area: article01; 
+    background-color: rgb(0, 162, 255);
+}
+.article01 a {
+    text-decoration: none;
+}
+.article01 a:hover {
+    text-decoration: underline;
+}
+.article02 {
+    grid-area: article02;
+    background-color: rgb(0, 162, 255); 
+}
+.article02 a {
+    text-decoration: none;
+}
+.article02 a:hover {
+    text-decoration: underline;
+}
+.article03 {
+    grid-area: article03;
+    background-color: rgb(0, 162, 255); 
+}
+.article03 a {
+    text-decoration: none;
+}
+.article03 a:hover {
+    text-decoration: underline;
+}
+.article04 {
+    grid-area: article04;
+    background-color: rgb(0, 162, 255); 
+}
+.article04 a {
+    text-decoration: none;
+}
+.article04 a:hover {
+    text-decoration: underline;
+}
+.article05 {
+    grid-area: article05;
+    background-color: rgb(0, 162, 255); 
+}
+.article05 a {
+    text-decoration: none;
+}
+.article05 a:hover {
+    text-decoration: underline;
+}
+.footer {
+    grid-area: footer;
+    font-size: 15px;
+    font-weight: normal;
+    margin: 0;
+    display: flex;
+    align-items: stretch;    
+}
+.footer a {
+    color: white;
+}
+    
+    /*@media screen and (max-width: 768px) {
+      .hero-container {
+        grid-template-columns: 70px 1fr;
+        grid-template-areas: "badge title"
+                             "description description"
+                             "form form"
+                             "countdown countdown";
+      }
+    }*/
