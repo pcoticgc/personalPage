@@ -6,7 +6,7 @@ body {
     background-image: url(./images/fondo.jpg);
     margin: 0px;
     padding: 0px;
-    background-size:100% 135%;
+    background-size:100% 180%;
 }
   
 header{
@@ -21,6 +21,7 @@ header{
 .header-user-img{
     height: 54px;
     width: 54px;
+    grid-area: header-user-img;
 }
 .header-user-ul{
 	display: none;
@@ -52,7 +53,8 @@ header{
     margin-bottom: 20px;
     margin-right: 0px;
     margin-left: 0px;
-    border-radius: 35px;  
+    border-radius: 35px; 
+    grid-area: header-search-input; 
 }
 
 .header-language {
@@ -159,7 +161,15 @@ footer {
     grid-row-gap: 2px;
     padding-left: 2px;
     padding-top: 2px;
+    grid-template-areas: "header-language header-search-input header-search-input header-search-input header-user-img"
+                         ".    .       .         .    ."
+                         ". trabajo trabajo1 trabajo2 ."
+                         ". trabaj3 trabajo4 trabajo5 main-aside"
+                         ".    .       .         .    main-aside"
+                         ".    .       .         .    main-aside"
+                         ".  main-footer main-footer main-footer  .";
 }
+
   /* Too narrow to support three columns
   @media all and (max-width: 320px) {
   
