@@ -7,8 +7,7 @@ body {
 }
 .container {
     display: grid;
-    grid-template: 200px 1fr 1fr 1fr 1fr 1fr 200px / 200px 1fr 1fr 1fr 200px;
-    grid-gap: 10px;
+    grid-template: 64px 64px 64px 64px 64px 64px 64px / 64px 64px 64px 64px 64px ;
     height: 100vh;
     grid-template-areas: 
     " user      search    search    search    language"
@@ -17,14 +16,13 @@ body {
     " .         article03 article03 article03 ."
     " .         article04 article04 article04 ."
     " .         article05 article05 article05 ."
-    " .         footer    footer    footer .";
-    grid-gap: 30px;
+    " .         footer    footer    footer ."
 }
  
 
 .header-user-img {
     grid-area: user;
-    width: 180px; 
+    width: 60px; 
 }
 .header-user-img:hover{
     cursor: pointer;
@@ -62,7 +60,7 @@ body {
 
 .header-language-img {
     grid-area: language;
-    width: 180px;
+    width: 60px;
     padding-top: 10px;
     padding-left: 10px;
 }
@@ -74,7 +72,7 @@ body {
 }   
 .header-language-ul {
     grid-area: language-menu;
-    width: 180px;
+    width: 60px;
     display: none;
     list-style: none;
     margin: 0px;
@@ -83,11 +81,11 @@ body {
     z-index: 100*/
 }
 .header-language-li {
-    width: 180px;
+    width: 60px;
 }
 .header-language-li:hover img{
-    width: 178px;
-    height: 178px;
+    width: 58px;
+    height: 58px;
     cursor: pointer;
 }
 .article01 {
@@ -182,7 +180,7 @@ body {
     text-decoration: underline;
 }
     
-    @media  (min-width: 768px) {
+   /* @media  (min-width: 768px) {
         .container {   
             " .      user    search    language      ."
             " .   user-menu article01  language-menu . "
@@ -211,4 +209,4 @@ body {
             font-size: 30px;  
         } 
 
-    }
+    }*/
