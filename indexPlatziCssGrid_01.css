@@ -2,12 +2,10 @@ body {
     margin: 0;
     font-family: 'Lato', sans-serif;
     background-color: teal;
-    padding: 5px;
 }
 .container {
     display: grid;
-    grid-template: 70px 70px 70px 70px 70px 70px 70px / 70px 70px 70px 70px 70px;
-    grid-gap: 10px;
+    grid-template: 52px 52px 52px 52px 52px 52px 52px / 52px 52px 52px 52px 52px ;
     height: 100vh;
     grid-template-areas: 
     " user      search    search    search    language"
@@ -22,8 +20,8 @@ body {
     
 .header-user-img {
     grid-area: user;
-    width: 60px;
-    padding-top: 10px;
+    width: 58px;
+    padding-top: 5px;
 }
 .header-user-img:hover{
     cursor: pointer;
@@ -38,7 +36,7 @@ body {
     text-align: left;  
     margin: 0px;
     padding: 0px;
-    padding-left: 10px;
+    padding-left: 5px;
 }
 .header-user-li a {
     color: white;
@@ -53,7 +51,7 @@ body {
 .header-search-input {
     grid-area: search;
     height: 40px;
-    margin-top: 15px;
+    margin-top: 5px;
     border: solid cadetblue;
     border-radius: 25px;
     
@@ -61,8 +59,8 @@ body {
 
 .header-language-img {
     grid-area: language;
-    width: 60px;
-    padding-top: 10px;
+    width: 58px;
+    padding-top: 5px;
 }
 .header-language-img:hover{
     cursor: pointer;
@@ -72,14 +70,14 @@ body {
 }   
 .header-language-ul {
     grid-area: language-menu;
-    width: 60px;
+    width: 58px;
     display: none;
     list-style: none;
     margin: 0px;
     padding: 0px;
 }
 .header-language-li {
-    width: 60px;
+    width: 58px;
 }
 .header-language-li:hover img{
     width: 58px;
@@ -92,6 +90,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-top: 5px;
 }
 .article01 a {
     color: white;
@@ -173,12 +172,31 @@ body {
     text-decoration: underline;
 }
     
-    /*@media screen and (max-width: 768px) {
-      .hero-container {
-        grid-template-columns: 70px 1fr;
-        grid-template-areas: "badge title"
-                             "description description"
-                             "form form"
-                             "countdown countdown";
-      }
-    }*/
+    /* cuando la pantalla sea mas grande de 320px a 480px*/
+    @media screen and (min-width: 320px) {
+        .container {
+            grid-template: 60px 60px 60px 60px 60px 60px 60px / 60px 60px 60px 60px 60px ;
+            grid-template-areas: 
+            " user      search    search    search    language"
+            " user-menu article01 article01 article01 language-menu"
+            " user-menu article02 article02 article02 language-menu"
+            " .         article03 article03 article03 ."
+            " .         article04 article04 article04 ."
+            " .         article05 article05 article05 ."
+            " .         footer    footer    footer .";
+          }
+    }
+    /* cuando la pantalla sea mas grande de 480px a 768px*/
+    @media screen and (min-width: 480px) {
+        .container {
+            grid-template: 92px 92px 92px 92px 92px 92px 92px / 92px 92px 92px 92px 92px ;
+            grid-template-areas: 
+            " user      search    search    search    language"
+            " user-menu article01 article01 article01 language-menu"
+            " user-menu article02 article02 article02 language-menu"
+            " .         article03 article03 article03 ."
+            " .         article04 article04 article04 ."
+            " .         article05 article05 article05 ."
+            " .         footer    footer    footer .";
+          }
+    }
